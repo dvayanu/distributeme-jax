@@ -19,5 +19,20 @@ run your servlet container
 
 you should now be able to send requests with postman (via POST):  
 
-http://{{url}}:{{port}}/{{app}}/rest/FirstService/printHelloWorld
+http://{{url}}:{{port}}/dimejaxrs/rest/FirstService/printHelloWorld
+prints hello world to your console  
+
+
+http://{{url}}:{{port}}/dimejaxrs/rest/FirstService/getMessageBack
+sends the message back (json message)
+
+http://{{url}}:{{port}}/dimejaxrs/rest/FirstService/callWithParameter
+with json:
+{"value": "Howdy"}
+
+============
+
+=== Why
+
+DistributeMe JAXRS Support allows you to create REST Resources out of JavaInterfaces by simply adding one annotation. This allows you to distribute your application in a very easy way
 
